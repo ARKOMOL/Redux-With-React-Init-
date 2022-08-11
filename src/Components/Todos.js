@@ -20,20 +20,6 @@ const Todos = () => {
             </h1>
             {isLoading && <h1> Loading.....</h1> }
             {error && <h1>{error.message} </h1>}
-            {/* <section>
-                {
-                    todos && todos.map ((todo)=>{
-                        return <article>
-                            <h1>
-                                {todo.id}
-                            </h1> <h1>
-                                {todo.title}
-                            </h1>
-                        </article>
-                    })
-                }
-            </section> */}
-
 
             <section>
                 {
@@ -41,9 +27,8 @@ const Todos = () => {
                     todos.map((todo) =>{
                         
                         return <article key={todo.id}>
-                            <h1> todo: {todo.id} </h1>
+                            <h1>{todo.id} </h1>
                             <h1>{todo.title} 
-                            
                             </h1>
                         </article>
                     })
